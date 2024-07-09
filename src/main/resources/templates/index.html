@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Jira App</title>
+</head>
+<body>
+<h1>Jira App</h1>
+<ul th:each="issue : ${issues}">
+    <li th:text="${issue.summary}">Summary</li>
+</ul>
+<form th:action="@{/create-issue}" method="post">
+    <label for="projectKey">Project Key:</label>
+    <input type="text" id="projectKey" name="projectKey" />
+    <br />
+    <label for="summary">Summary:</label>
+    <input type="text" id="summary" name="summary" />
+    <br />
+    <label for="description">Description:</label>
+    <textarea id="description" name="description"></textarea>
+    <br />
+    <label for="issueType">Issue Type:</label>
+    <select id="issueType" name="issueType">
+        <option th:each="issueType : ${issueTypes}}" th:value="${issueType.name}" th:text="${issueType.name}">Issue Type</option>
+    </select>
+    <br />
+    <input type="submit" value="Create Issue" />
+</form>
+</body>
+</html>

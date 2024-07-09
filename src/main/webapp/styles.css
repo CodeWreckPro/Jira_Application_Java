@@ -1,0 +1,85 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
+
+header {
+    background-color: #f0f0f0;
+    padding: 20px;
+    text-align: center;
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+}
+
+section {
+    flex: 1;
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#issue-list {
+    background-color: #f7f7f7;
+}
+
+#issue-list-ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#issue-list-ul li {
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+}
+
+#issue-list-ul li:last-child {
+    border-bottom: none;
+}
+
+#create-issue {
+    background-color: #fff;
+}
+
+#create-issue-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+#create-issue-form label {
+    margin-bottom: 10px;
+}
+
+#create-issue-form input, #create-issue-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+}
+
+#create-issue-form select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+}
+
+#create-issue-form input[type="submit"] {
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+#create-issue-form input[type="submit"]:hover {
+    background-color: #3e8e41;
+}

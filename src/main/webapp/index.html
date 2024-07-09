@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jira App</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header>
+    <h1>Jira App</h1>
+</header>
+<main>
+    <section id="issue-list">
+        <h2>Issues</h2>
+        <ul id="issue-list-ul">
+            <!-- issues will be rendered here -->
+        </ul>
+    </section>
+    <section id="create-issue">
+        <h2>Create Issue</h2>
+        <form id="create-issue-form">
+            <label for="projectKey">Project Key:</label>
+            <input type="text" id="projectKey" name="projectKey" />
+            <br />
+            <label for="summary">Summary:</label>
+            <input type="text" id="summary" name="summary" />
+            <br />
+            <label for="description">Description:</label>
+            <textarea id="description" name="description"></textarea>
+            <br />
+            <label for="issueType">Issue Type:</label>
+            <select id="issueType" name="issueType">
+                <!-- issue types will be rendered here -->
+            </select>
+            <br />
+            <input type="submit" value="Create Issue" />
+        </form>
+    </section>
+</main>
+<script src="script.js"></script>
+</body>
+</html>
