@@ -27,11 +27,19 @@ JiraApp is a comprehensive project management tool designed to streamline projec
   
 - **HTML/CSS**: Frontend structure and styling for a responsive and user-friendly interface.
 
+## Prerequisites
+
+Before you begin, ensure you have the following installed on your system:
+
+- Java Development Kit (JDK) 11 or higher
+- Apache Maven
+- Jira API Credentials
+
 ## Getting Started
 
 To run JiraApp locally:
 1. Clone this repository.
-2. Configure `application.properties` with your MySQL database credentials.
+2. Configure `application.properties` with your Jira API credentials.
 3. Build the project using Maven:
    ```
    mvn clean install
