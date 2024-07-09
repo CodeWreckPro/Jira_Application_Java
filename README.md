@@ -53,4 +53,4 @@ We welcome contributions to JiraApp! To contribute:
 
 ## License
 
-Distributed under the MIT License[LICENSE].
+This project is licensed under the [MIT License](LICENSE).
